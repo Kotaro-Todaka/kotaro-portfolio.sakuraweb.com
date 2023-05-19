@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.423" height="7.423" viewBox="0 0 7.423 7.423">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #242424;
+      }
+    </style>
+  </defs>
+  <g id="arrow" transform="translate(-0.628 5.381) rotate(-45)">
+    <path id="線_4" data-name="線 4" class="cls-1" d="M6.609.5H0A.5.5,0,0,1-.5,0,.5.5,0,0,1,0-.5H6.609a.5.5,0,0,1,.5.5A.5.5,0,0,1,6.609.5Z" transform="translate(0 1.888)"/>
+    <path id="線_5" data-name="線 5" class="cls-1" d="M1.888,2.388a.5.5,0,0,1-.354-.146L-.354.354a.5.5,0,0,1,0-.707.5.5,0,0,1,.707,0L2.242,1.535a.5.5,0,0,1-.354.854Z" transform="translate(4.721)"/>
+    <path id="線_6" data-name="線 6" class="cls-1" d="M0,2.388a.5.5,0,0,1-.354-.146.5.5,0,0,1,0-.707L1.535-.354a.5.5,0,0,1,.707,0,.5.5,0,0,1,0,.707L.354,2.242A.5.5,0,0,1,0,2.388Z" transform="translate(4.721 1.888)"/>
+  </g>
+</svg>

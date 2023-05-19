@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/* 定義 */
+:root {
+  /* z-index 定義 */
+  --z-index--button: 30; /* ボタンのz-index */
+  /* カラー定義 */
+  --color--medium-gray: #999999;
+  --color--dark-gray: #242424;
+  --color--vivid-yellow: #FFF800;
+  --color--transparent-black: rgba(38, 38, 38, 0.9);
+  /* グラデーション定義 */
+  --gradient--white-to-light-gray: linear-gradient(122deg, #FFFFFF 0%, #CCCCCC 100%);
+  /* フィルター定義 */
+  --filter-shadow--sheer-black-sp: drop-shadow(0 0 10px rgba(0,0,0,0.2));
+  --filter-shadow--sheer-black-pc: drop-shadow(0 0 20px rgba(0,0,0,0.2));
+}
+
+/* Works detail セクション */
+.section-works-detail {
+  width: 100%;
+  height: 100%;
+  padding-top: 90px; /* PCは120px */
+  margin-bottom: 100px;
+  text-align: left;
+}
+.section-works-detail-container {
+  width: 90%;
+  max-width: 487px;
+  margin: 0 auto;
+}
+/* メインビジュアル */
+.section-works-detail__main-visual {
+  margin-bottom: 50px;
+}
+/* サイトタイトル */
+.section-works-detail__title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  margin-bottom: 20px;
+}
+.section-works-detail__title {
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.section-works-detail__title--uppercase {
+  text-transform: uppercase;
+}
+.section-works-detail__title--line-height {
+  line-height: 1.5;
+}
+/* タイトル説明文 */
+.section-works-detail__explanation {
+  color: var(--color--medium-gray);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5;
+}
+/* 公開日付・制作日付・サイズ */
+.section-works-detail__main-visual-definition-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+  margin-bottom: 40px;
+}
+.section-works-detail__main-visual-definition-item {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+.section-works-detail__main-visual-definition-heading,
+.section-works-detail__main-visual-definition-body {
+  color: var(--color--medium-gray);
+  font-size: 0.875rem; /* 14px */
+}
+
+/* メインビジュアル画像 */
+/* 共通 */
+.section-works-detail__main-visual-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-works-detail__main-visual-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-works-detail__main-visual-image--filter img {
+  filter: var(--filter-shadow--sheer-black-sp);
+}
+/* Webサイト制作物 */
+.section-works-detail__web-site {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.section-works-detail__web-site img {
+  border-radius: 4px;
+  background-image: var(--gradient--white-to-light-gray);
+}
+.section-works-detail__web-site--large {
+  /* width: 68%; */
+  flex-basis: 68%;
+}
+.section-works-detail__web-site--small {
+  /* width: 23%; */
+  flex-basis: 23%;
+}
+/* バナー・ポスター・ロゴ 制作物*/
+.section-works-detail__banner img {
+  width: 82%;
+  max-width: 280px;  
+  background-image: var(--gradient--white-to-light-gray);
+}
+.section-works-detail__poster img {
+  width: 68%;
+  max-width: 230px;
+  background-image: var(--gradient--white-to-light-gray);
+}
+.section-works-detail__logo img {
+  width: 77%;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* PC サイズからの変化 */
+@media (min-width:1025px) {
+  /* works-detail セクション */
+  .section-works-detail {
+    margin-bottom: 160px;
+    padding-top: 120px;
+  }
+  .section-works-detail__title-wrapper {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .section-works-detail-container {
+    width: 80%;
+    max-width: 1180px;
+  }
+  /* メインビジュアル */
+  .section-works-detail__main-visual {
+    margin-bottom: 60px;
+  }
+  /* サイトタイトル */
+  .section-works-detail__title-container {
+    margin-bottom: 20px;
+  }
+  .section-works-detail__title {
+    font-size: 2.375rem; /* 38px */
+  }
+  .section-works-detail__title--line-height {
+  line-height: unset;
+  }
+  /* タイトル説明文 */
+  .section-works-detail__explanation {
+    font-size: 1rem; /* 16px */
+  }
+  /* 公開日付・制作日付・サイズ */
+  .section-works-detail__main-visual-definition-list {
+    gap: 10px 0;
+    margin-bottom: 60px;
+  }
+
+  /* メインビジュアル画像 */
+  /* 共通 */
+  .section-works-detail__main-visual-image--filter img {
+    filter: var(--filter-shadow--sheer-black-pc);
+  }
+  /* Webサイト制作物 */
+  .section-works-detail__web-site {
+    max-width: 1140px;
+    gap: 100px;
+  }
+  .section-works-detail__web-site img {
+    border-radius: 8px;
+  }
+  /* バナー・ポスター・ロゴ 制作物*/
+  .section-works-detail__banner img,
+  .section-works-detail__poster img,
+  .section-works-detail__logo img {
+    width: 30%;
+  }
+  .section-works-detail__banner img {
+    max-width: 600px;
+  }
+  .section-works-detail__poster img {
+    max-width: 357px;
+  }
+  .section-works-detail__logo img {
+    height: 225px;
+  }
+}
+
+
+/* ここから制作物の説明パート */
+/* 基本レイアウト */
+.section-works-detail__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px 0;
+  margin-bottom: 80px;
+}
+.section-works-detail__column:last-child {
+  margin-bottom: unset;
+}
+.section-works-detail__column--small-margin-bottom {
+  margin-bottom: 60px;
+}
+/* 定義リストの見出し */
+.section-works-detail__heading {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 700;
+}
+/* リスト内の文章 */
+.section-works-detail__body {
+  font-size: 1rem; /* 16px */
+  line-height: 2;
+}
+/* チェックボックスがついた項目 */
+.section-works-detail__check-list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px 40px;
+
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px; */
+}
+.section-works-detail__check-text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../image/common/button.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(2px);
+}
+/* 英字を大文字にするためのスタイル */
+.section-works-detail__text--uppercase {
+  text-transform: uppercase;
+}
+/* 画像の背景に drop-filter するクラス（全画面サイズ共通） */
+.section-works-detail__image--filter {
+  filter: var(--filter-shadow--sheer-black-sp);
+}
+
+/* Webサイト */
+/* デザイン項目の説明文下に配置される、Webサイトのカラーパレット */
+.section-works-detail__color-palette {
+  margin-top: 50px;
+}
+.section-works-detail__color-palette img {
+  object-fit: contain;
+}
+/* サイト素材詳細ページへの誘導項目 */
+/* 共通 */
+.section-works-detail__site-material {
+  margin: 0 auto;
+}
+/* サイト使用ロゴ */
+.section-works-detail__site-material--logo {
+  width: 60%;
+  max-width: 320px;
+}
+/* サイト使用イラスト */
+.section-works-detail__site-material--illust {
+  max-width: 580px;
+} 
+/* サイト内リンクボタン */
+.section-works-detail__link-button-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section-works-detail__link-button {
+  padding: 5px 15px;
+  color: var(--color--dark-gray);
+  font-size: 0.875rem; /* 14px */
+}
+.section-works-detail__link-button::after {
+  content: "\0bb";
+  display: inline-block;
+  padding-left: 36px;
+  font-size: 1rem;
+}
+/* サイト外リンク項目 */
+.section-works-detail__off-site-link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+/* サムネタイトル */
+.section-works-detail__thumbnail-title {
+  border-radius: 4px;
+  color: var(--color--dark-gray);
+  font-size: 1.125rem; /* 18px */
+}
+/* サムネイル画像 */
+.section-works-detail__thumbnail img {
+  border-radius: 4px;
+}
+/* GitHubへのリンク */
+.section-works-detail__text-link-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.section-works-detail__text-link {
+  color: var(--color--dark-gray);
+  font-family: Jost;
+  font-size: 1.125rem; /* 18px */
+}
+
+/* デザインカンプ */
+.section-works-detail__design-comp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+  margin-top: 80px;
+}
+
+/* 公開サイトへのリンクボタン */
+.section-works-detail__public-site-link-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  z-index: var(--z-index--button);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.section-works-detail__public-site-link {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--color--transparent-black);
+  text-align: center;
+}
+.section-works-detail__link-text {
+  color: var(--color--vivid-yellow);
+  font-family: 'Jost';
+  font-size: 0.875rem; /* 14px */
+}
+/* section-works-detail__definition-list 内で出現する */
+.is-show.section-works-detail__public-site-link-wrapper {
+  transform: translateY(0);
+}
+
+
+/* ロゴ */
+/* デザイン項目の説明文下に配置される、ロゴのバリエーション */
+.section-works-detail__logo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.section-works-detail__logo-item {
+  width: auto;
+  height: 85px;
+}
+.section-works-detail__logo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: var(--filter-shadow--sheer-black-sp);
+}
+
+
+
+/* PC サイズからの変化 */
+@media (min-width:1025px) {
+  /* ここから制作物の説明パート */
+  /* 基本レイアウト */ 
+  .section-works-detail__definition-list {
+    width: 95%;
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+  .section-works-detail__column {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+    margin-bottom: 80px;
+  }
+  /* 各イラスト詳細のレイアウト */
+  .section-works-detail__column--grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto 59%;
+    gap: 0px 10%;
+  }
+  /* 定義リストの見出し */
+  .section-works-detail__heading {
+    grid-column: 2/3;
+    line-height: 2;
+  }
+  .section-works-detail__heading-inner {
+    gap: unset;
+    margin-bottom: 20px;
+  }
+  /* リスト内の文章 */
+  .section-works-detail__body {
+    flex-basis: 78%;
+    font-size: 1.125rem; /* 18px */
+  }
+  /* チェックボックスがついた項目 */
+  .section-works-detail__check-list {
+    grid-template-columns: repeat(3, auto);
+    gap: 30px 0px;
+  }
+
+  /* Webサイト */
+  /* デザイン項目の説明文下に配置される、Webサイトのカラーパレット */
+  .section-works-detail__color-palette {
+    margin-top: 80px;
+  }
+  /* サイト素材詳細ページへの誘導項目 */
+  /* 共通 */
+  .section-works-detail__column--site-link {
+    flex-direction: column;
+    gap: 30px 0;
+  }
+  /* リンクボタン */
+  .section-works-detail__link-button {
+    font-size: 1.125rem; /* 18px */
+  }
+  .section-works-detail__link-button::after {
+    font-size: 1.5rem; /* 24px */
+  }
+  /* サイト外リンク項目 */
+  .section-works-detail__off-site-link {
+    gap: 40px 0;
+  }
+  /* サムネタイトル */
+  .section-works-detail__thumbnail-title {
+    width: fit-content;
+    padding-right: 10px;
+  }
+  /* サムネイル画像 */
+  .section-works-detail__thumbnail {
+    max-width: 480px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .section-works-detail__thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  /* GitHubへのリンク */
+  .section-works-detail__text-link-wrapper {
+    margin-top: 40px;
+  }
+
+  /* デザインカンプ */
+  .section-works-detail__design-comp {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .section-works-detail__design-comp img {
+    object-fit: contain;
+  }
+  .section-works-detail__design-comp img:first-child {
+    width: 68%;
+  }
+  .section-works-detail__design-comp img:last-child {
+    width: 25%;
+  }
+  /* 公開サイトへのリンクボタン */
+  .section-works-detail__public-site-link {
+    padding: 15px 0;
+  }
+  .section-works-detail__link-text {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  /* ロゴ */
+  /* デザイン項目の説明文下に配置される、ロゴのバリエーション */
+  .section-works-detail__logo-list {
+    gap: 60px;
+    margin-top: 80px;
+  }
+  .section-works-detail__logo-item {
+    height: 160px;
+  }
+
+  /*
+   * hover イベント（ 条件の都合で、共通化できなかったアニメーション ）
+  */
+  /* 制作記録項目のリンクアニメーション */
+  /* 下線アニメーション */
+  .section-works-detail__off-site-link:hover .under-line-animation--dark-gray {
+    background-position: bottom left;
+    background-size: 100% 1px;
+  }
+  /* スケールアニメーション */
+  .section-works-detail__off-site-link:hover .scale-thumbnail-animation {
+    transform: scale(1.05);
+  }
+
+  /* 公開サイトへのリンクボタン */
+  .section-works-detail__public-site-link:hover .under-line-animation--vivid-yellow {
+    background-position: bottom left;
+    background-size: 100% 1px;
+  }
+}
+

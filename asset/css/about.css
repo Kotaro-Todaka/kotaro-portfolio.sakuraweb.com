@@ -1,0 +1,470 @@
+@charset "UTF-8";
+/* 定義 */
+:root {
+  /* カラー定義 */
+  --color--white: #FFFFFF;
+  --color--bluish-white: #F6F8F9;
+  --color--medium-gray: #999999;
+  /* グラデーション定義 */
+  --gradient--white-to-light-gray: linear-gradient(122deg, #FFFFFF 0%, #CCCCCC 100%);
+  /* フィルター定義 */
+  --filter-shadow--sheer-black: drop-shadow(0 0 10px rgba(0,0,0,0.2));
+}
+
+main {
+  text-align: left;
+}
+
+
+/* About セクション */
+.section-about-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  padding-top: 90px;
+}
+.section-about-container {
+  width: 90%;
+  max-width: 487px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* 写真 */
+.section-about__image {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 3/2;
+  margin: 0 auto 60px;
+  border-radius: 4px;
+  background-image: var(--gradient--white-to-light-gray);
+  filter: var(--filter-shadow--sheer-black);
+}
+.section-about__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+/* テキストエリア */
+.section-about__profile-column {
+  
+  margin-bottom: 30px;
+}
+/* 名前 */
+.section-about__name {
+  display: flex;
+  align-items: flex-end;
+  gap: 0 15px;
+  margin-bottom: 30px;
+}
+.section-about__name-ja {
+  font-size: 1.5rem; /* 24px */
+}
+.section-about__name-en {
+  color: var(--color--medium-gray);
+  font-size: 0.875rem; /* 14px */
+  font-weight: normal;
+}
+.section-about__name-en--uppercase {
+  text-transform: uppercase;
+}
+/* 自己紹介文 */
+.section-about__description {
+  line-height: 2;
+  text-align: left;
+}
+/* SNS リンク */
+.section-about__sns-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 14px;
+}
+.section-about__sns-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.section-about__sns-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PC サイズからの変化 */
+@media (min-width:1025px) {
+  /* About セクション */
+  .section-about-wrapper {
+    margin-bottom: 160px;
+    padding-top: 100px;
+  }
+  .section-about-container {
+    width: 80%;
+    max-width: 1180px;
+  }
+  /* 写真 */
+  .section-about__image {
+    width: 72%;
+    max-width: 720px;
+    aspect-ratio: 16/9;
+    margin-bottom: 80px;
+    border-radius: 8px;
+  }
+  .section-about__image img {
+    border-radius: 8px;
+  }
+  /* テキストエリア */
+  .section-about__profile-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 620px;
+    margin: 0 auto 40px;
+  }
+  /* 自己紹介文 */
+  .section-about__description {
+    font-size: 1.125rem /* 18px */;
+  }
+  /* 名前 */
+  .section-about__name-ja {
+    font-size: 2.25rem; /* 36px */
+  }
+  .section-about__name-en {
+    font-size: 1.125rem; /* 18px */
+    margin-left: 20px;
+  }
+  /* SNSリンク */
+  .section-about__sns-list {
+    gap: 0 20px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}
+
+
+/* Strength セクション */
+.section-strength-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+.section-strength-container {
+  width: 90%;
+  max-width: 487px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* 見出し */
+.section-strength__title {
+  margin-bottom: 80px;
+}
+/* リスト */
+.section-strength__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px 0;
+}
+/* リストタイトル */
+.section-strength__item-title {
+  position: relative;
+  margin-bottom: 35px;
+}
+.section-strength__item-title-number {
+  color: var(--color--white);
+  font-family: Jost;
+  font-size: 5.25rem; /* 84px */
+}
+.section-strength__item-title-number--position {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  z-index: -1;
+}
+.section-strength__item-title-ja {
+  color: var(--color--dark-gray);
+  font-family: ZenKakuGothicNew;
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+
+  text-decoration-color: var(--color--medium-gray);
+  text-decoration-line: underline;
+  text-underline-offset: 7px;
+}
+/* イラスト */ 
+.section-strength__item-image {
+  width: 250px;
+  margin: 0 auto 30px;
+}
+.section-strength__item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* 説明文 */
+.section-strength__item-description {
+  font-size: 1rem; /* 16px */
+  line-height: 2;
+}
+
+/* PC サイズからの変化 */
+@media (min-width:1025px) {
+  /* Strength セクション */
+  .section-strength-wrapper {
+    margin-bottom: 160px;
+  }
+  .section-strength-container {
+    width: 80%;
+    max-width: 1180px;
+  }
+  /* 見出し */
+  .section-strength__title {
+  margin-bottom: 60px;
+  }
+  /* リスト */
+  .section-strength__list {
+    gap: 180px 0;
+  }
+  /* リスト内 */
+  .section-strength__item {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    gap: 0 10%;
+
+    max-width: 1160px;
+    padding: 80px;
+    background-color: var(--color--bluish-white);
+
+    position: sticky;
+    top: 10%;
+  }
+  /* リストタイトル */
+  .section-strength__item-title {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-bottom: 60px;
+  }
+  .section-strength__item-title-number {
+    font-size: 7.875rem; /* 126px */
+  }
+  .section-strength__item-title-number--position {
+    top: -80px;
+    left: -45px;
+  }
+  .section-strength__item-title-ja {
+    font-size: 2.25rem; /* 36px */
+    text-underline-offset: 10px;
+  }
+  /* イラスト */ 
+  .section-strength__item-image {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    width: 400px;
+    margin-bottom: unset;
+  }
+  /* 説明文 */
+  .section-strength__item-description {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 1.125rem; /* 18px */
+  }
+}
+
+
+/* Study セクション */
+.section-study-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+.section-study-container {
+  width: 90%;
+  max-width: 487px;
+  margin: 0 auto;
+}
+/* コンテンツまとめ */
+.section-study__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px 0;
+}
+/* 図形 */
+.section-study__image {
+  width: 75%;
+  max-width: 300px;
+}
+.section-study__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 文章 */
+.section-study__description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+  margin-bottom: 30px;
+}
+.section-study__text {
+  line-height: 2;
+}
+/* SNSリンク */
+.section-study__sns-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0 14px;
+}
+/* アイコン全般 */
+.section-study__sns-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.section-study__sns-link img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+/* 横長アイコン用 */
+.section-study__sns-link--rectangle {
+  width: 100%;
+  height: 35px;
+}
+.section-study__sns-link--rectangle img {
+  width: 100%;
+  height: 25px;
+  object-fit: contain;
+}
+
+/* PC サイズからの変化 */
+@media (min-width:1025px) {
+  /* Study セクション */
+  .section-study-wrapper {
+    margin-bottom: 160px;
+  }
+  .section-study-container {
+    width: 80%;
+    max-width: 1180px;
+  }
+  /* コンテンツまとめ */
+  .section-study__column {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0 7%;
+  }
+  /* 図形 */
+  .section-study__image {
+    width: 100%;
+    max-width: 400px;
+
+    position: sticky;
+    top: 10%;
+  }
+  /* 文章とSNSリンクのブロック */
+  .section-study__block {
+    width: 100%;
+    flex-basis: 520px;
+  }
+  /* 文章 */
+  .section-study__description {
+    gap: 30px 0;
+    margin-bottom: 40px;
+  }
+  .section-study__text {
+    font-size: 1.125rem; /* 18px */
+  }
+  /* SNSリンク */
+  .section-study__sns-list {
+    gap: 0 20px;
+  }
+}
+
+
+/* Biographyセクション */
+.section-biography-wrapper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 90px;
+}
+.section-biography-container {
+  width: 90%;
+  max-width: 487px;
+  margin: 0 auto;
+}
+/* リスト */
+.section-biography__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px 0;
+  padding: 30px 0px 30px 30px;
+  border-left: 1px solid var(--color--medium-gray);
+}
+/* リストアイテム */
+.section-biography__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+/* 時間 */
+.section-biography__event-time {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem; /* 18px */
+}
+.section-biography__event-time::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin-left: -35px;
+  border-radius: 50%;
+  background-color: var(--color--dark-gray);
+}
+/* 文章 */
+.section-biography__event-description {
+  font-size: 1rem; /* 16px */
+  line-height: 2;
+}
+
+/* PC サイズからの変化 */
+@media (min-width:1025px) {
+  /* Biographyセクション */
+  .section-biography-wrapper {
+    margin-bottom: 180px;
+  }
+  .section-biography-container {
+    width: 80%;
+    max-width: 1180px;
+  }
+  /* リスト */
+  .section-biography__list {
+    gap: 60px 0;
+
+    width: 90%;
+    max-width: 1020px;
+    margin: 0 0 0 auto;
+    padding-left: 60px;
+  }
+  /* リストアイテム */
+  .section-biography__item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0 40px;
+  }
+  /* 時間 */
+  .section-biography__event-time::before {
+    margin-left: -65px;
+  }
+  /* 文章 */
+  .section-biography__event-description {
+    margin-top: -10px;
+    font-size: 1.125rem; /* 18px */
+  }  
+}

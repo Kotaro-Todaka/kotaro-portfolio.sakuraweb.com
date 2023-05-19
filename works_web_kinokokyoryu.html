@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Kinokokyoryu｜Web Site｜TODAKA Kotaro Portfolio Site</title>
+		<meta name="robots" content="noindex">
+		<meta name="description" content="戸高光太朗のポートフォリオサイトです。">
+		<meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
+		<!-- CSS files -->
+		<link rel="stylesheet" href="asset/css/reset.css">
+		<link rel="stylesheet" href="asset/css/common.css">
+		<link rel="stylesheet" href="asset/css/works.css">
+		<!-- Favicon & Apple-touch-icon -->
+		<link rel="icon" type="image/x-icon" href="asset/image/common/favicon.ico">
+		<link rel="icon" type="image/png" href="asset/image/common/android-chrome-192x192.png" sizes="192x192">
+		<link rel="apple-touch-icon" href="asset/image/common/apple-touch-icon.png" sizes="180x180">
+		<!-- OGP設定 -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://todakan-fresh.sakura.ne.jp/works_web_kinokokyoryu.html">
+		<meta property="og:locale" content="ja-JP">
+		<meta property="og:site_name" content="TODAKA Kotaro Portfolio Site">
+		<meta property="og:title" content="Kinokokyoryu｜Web Site｜TODAKA Kotaro Portfolio Site">
+		<meta property="og:description" content="キノコ恐竜公式サイトの制作内容についてみることができます。">
+		<meta property="og:image" content="asset/image/common/ogp.image-1200x630.png">
+		<meta property="og:image:alt" content="戸高光太朗のポートフォリオサイト、メインビジュアル">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<!-- Twitter-card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@TodaKAN_KAWA3">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="header-wrapper">
+				<div class="header-container">
+					<a class="header__logo" href="index.html">
+						<img src="asset/image/common/personal-logo.svg" alt="サイトロゴ">
+					</a>
+					<nav class="header__navigation" id="js-nav">
+						<div class="header__navigation-container">
+							<ol class="header__navigation-list">
+								<li class="header__navigation-item-sp">
+									<a href="index.html" class="header__navigation-link">
+										<span class="header__navigation-link-ja">トップページ</span>
+										<span class="header__navigation-link-en">Home</span>
+									</a>
+								</li>
+								<li>
+									<a href="index.html#works" class="header__navigation-link under-line-animation--dark-gray">
+										<span class="header__navigation-link-ja">制作物</span>
+										<span class="header__navigation-link-en">Works</span>
+									</a>
+								</li>
+								<li>
+									<a href="index.html#illust" class="header__navigation-link under-line-animation--dark-gray">
+										<span class="header__navigation-link-ja">イラスト</span>
+										<span class="header__navigation-link-en">Illust</span>
+									</a>
+								</li>
+								<li>
+									<a href="about.html" class="header__navigation-link under-line-animation--dark-gray">
+										<span class="header__navigation-link-ja">私について</span>
+										<span class="header__navigation-link-en">About</span>
+									</a>
+								</li>
+								<li>
+									<a href="index.html#skill" class="header__navigation-link under-line-animation--dark-gray">
+										<span class="header__navigation-link-ja">できること</span>
+										<span class="header__navigation-link-en">Skill</span>
+									</a>
+								</li>
+							</ol>
+							<ul class="header__navigation-sns-list">
+								<li>
+									<a href="https://twitter.com/TodaKAN_KAWA3" target="_blank" class="header__navigation-sns-link opacity-animation">
+										<img src="asset/image/common/Twitter social icons - rounded square - blue.png" alt="戸高光太朗が投稿しているツイッターアカウントのプロフィールページへのリンク">
+									</a>
+								</li>
+								<li>
+									<a href="https://github.com/Kotaro-Todaka" target="_blank" class="header__navigation-sns-link opacity-animation">
+										<img class="sns-icon-black" src="asset/image/common/github-mark.png" alt="戸高光太朗のGitHubへのリンク">
+										<img class="sns-icon-white" src="asset/image/common/github-mark-white.png" alt="戸高光太朗のGitHubへのリンク">
+									</a>
+								</li>
+								<li>
+									<a href="https://note.com/todakans_memo" target="_blank" class="header__navigation-sns-link opacity-animation">
+										<img src="asset/image/common/logo_symbol.png" alt="戸高光太朗が投稿しているnoteの記事一覧へのリンク">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<button type="button" id="js-hamburger" class="header__hamburger-button" aria-controls="header-navigation-menu" aria-expanded="false" aria-label="ナビゲーションメニューを開閉する">
+						<span class="header__hamburger-line"></span>
+						<span class="header__hamburger-line"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+    <main>
+			<section class="section-works-detail">
+        <div class="section-works-detail-container">
+					<div class="section-works-detail__main-visual">
+						<div class="section-works-detail__title-wrapper">
+							<div class="section-works-detail__title-container">
+								<h1 class="text-slide-animation js-animationTrigger">
+									<span class="section-works-detail__title text-slide-animation__inner js-animationTrigger">
+										キノコ恐竜公式サイト
+									</span>
+								</h1>
+								<p class="text-slide-animation text-animation--delay-time01 js-animationTrigger">
+									<span class="section-works-detail__explanation text-slide-animation__inner text-animation--delay-time01 js-animationTrigger">
+										作品の世界観とキャラクターの詳細をまとめて知ることができるキャラクターサイト
+									</span>
+								</p>
+							</div>
+							<dl class="section-works-detail__main-visual-definition-list">
+								<div class="section-works-detail__main-visual-definition-item">
+									<dt class="section-works-detail__main-visual-definition-heading">
+										公開日付：
+									</dt>
+									<dd class="section-works-detail__main-visual-definition-body">
+										<time datetime="2022-10-31">
+											2022/10/31
+										</time>
+									</dd>
+								</div>
+							</dl>
+						</div>
+						<div class="section-works-detail__main-visual-image section-works-detail__web-site section-works-detail__main-visual-image--filter">
+							<div class="section-works-detail__web-site--large fadeUp js-animationTrigger">
+								<img src="asset/image/works/web-site/01_kinokokyoryu/kinokokyoryu_mock-up-pc.webp" alt="キノコ恐竜公式サイトトップページ（PC）">
+							</div>
+							<div class="section-works-detail__web-site--small fadeUp delay-time01 js-animationTrigger">
+								<img src="asset/image/works/web-site/01_kinokokyoryu/kinokokyoryu_mock-up-sp.webp" alt="キノコ恐竜公式サイトトップページ（SP）">
+							</div>
+						</div>
+					</div>
+					<dl class="section-works-detail__definition-list js-linkButtonTrigger">
+						<div class="section-works-detail__column section-works-detail__column--small-margin-bottom">
+							<dt class="section-works-detail__heading">概要</dt>
+							<dd class="section-works-detail__body">
+								卒業制作で私のオリジナルキャラクター、キノコ恐竜の公式サイトを制作しました。独特なビジュアルと設定を持つキャラクターの良さをサイトを通じて感じてもらい、自分の好きなキャラクターと出会えるようなサイトを目指しました。
+							</dd>
+						</div>
+						<div class="section-works-detail__column section-works-detail__column--small-margin-bottom">
+							<dt class="section-works-detail__heading">ターゲット</dt>
+							<dd class="section-works-detail__body">
+								様々な経路からキャラクターに興味を持った方々
+							</dd>
+						</div>
+						<div class="section-works-detail__column section-works-detail__column--small-margin-bottom">
+							<dt class="section-works-detail__heading">目的</dt>
+							<dd class="section-works-detail__body">
+								初めてキャラクターをみた人と世界観を共有し、キャラクターのすべての情報をまとめるため
+							</dd>
+						</div>
+						<div class="section-works-detail__column section-works-detail__column--small-margin-bottom">
+							<dt class="section-works-detail__heading">情報設計</dt>
+							<dd class="section-works-detail__body">
+								サイト来訪者のキャラクターに対する認知度が不明なため、知りたい情報を自分で選択できるようなサイト設計にしました。具体的にはキノコ恐竜という団体としての情報と、個別のキャラクター情報をわけて下層サイトを設置。それぞれの下層サイトへのリンクをトップページに置くことで、興味を持ったタイミングで移動できる導線を意識しました。各セクションの分量は世界観の共有という目的にあうため、団体としての情報（キノコ恐竜の設定や物語）を多めにしています。個々のキャラクター情報の方は現在はテキストで設けていますが、それだけでは不十分なのでそれぞれが主軸となった話が追加される予定です。詳細ページの下部にはそれぞれのキャラクターグッズに直接飛べるようにリンクを配置しており、今後のサイト更新で新たにグッズなどが加わった際の導線を用意しています。
+							</dd>
+						</div>
+						<div class="section-works-detail__column">
+							<dt class="section-works-detail__heading">デザイン</dt>
+							<dd class="section-works-detail__body">
+								世界観の共有のため、サイト全体を通してキノコ恐竜の持つ【かわいさ、やわらかさ、まるさ】のイメージが伝わることを意識しました。ファーストビューでは何のサイトなのかを直感的に理解できるようにメインキャラクターの走るGifアニメーションを大きめに設置。背景はキャラクターの対照色を明るめにし、サイトイメージが明るくて若々しくなるようにしました。下層ページもトップページを踏襲して世界観が伝わるイラストや文章で仕上げ、統一感を持たせています。
+								<div class="section-works-detail__color-palette section-works-detail__image--filter">
+									<img src="asset/image/works/web-site/01_kinokokyoryu/kinokokyoryu-colorparette.webp" alt="キノコ恐竜公式サイトカラーパレット">
+								</div>
+							</dd>
+						</div>
+						<div class="section-works-detail__column">
+							<dt class="section-works-detail__heading">コーディング</dt>
+							<dd class="section-works-detail__body">
+								このサイトコーディングでは、どのように短い時間で効率よく実装できるかがテーマでした。デザインカンプを再現しながら、限られた時間内で実装できるように外部のサンプルコードを積極的に活用しました。具体的には、ページトップボタンやハンバーガーメニューの開閉アニメーションや、ローディングアニメーションの制御にサンプルコードを使っています。ローディングアニメーションの制御にはjquery.cookieというライブラリを使い、2回目以降の表示制限をしてあります。キャラクター一覧ページでは、hoverをトリガーとしてjQueryでの画像の切り替えをおこなっています。
+							</dd>
+						</div>
+						<div class="section-works-detail__column">
+							<dt class="section-works-detail__heading">
+								担当範囲
+							</dt>
+							<dd class="section-works-detail__body">
+								<ul class="section-works-detail__check-list">
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											企画
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											ワイヤーフレーム
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											デザイン
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											ロゴ
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											イラスト
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											コーディング
+										</span>
+									</li>
+								</ul>
+							</dd>
+						</div>
+						<div class="section-works-detail__column section-works-detail__column--site-link">
+							<dt class="section-works-detail__heading">
+								ロゴ
+							</dt>
+							<dd class="section-works-detail__body">
+								<div class="section-works-detail__site-material section-works-detail__site-material--logo fadeUp js-animationTrigger">
+									<img src="asset/image/works/logo/01_kinokokyoryu/site-logo-color.webp" alt="キノコ恐竜のロゴ">
+								</div>
+								<div class="section-works-detail__link-button-block">
+									<a href="works_logo_kinokokyoryu.html" class="section-works-detail__link-button link-under-line-animation--dark-gray" aria-label="キノコ恐竜のロゴ詳細ページへ飛ぶリンクボタン">
+										詳しくみる
+									</a>
+								</div>
+							</dd>
+						</div>
+						<div class="section-works-detail__column section-works-detail__column--site-link">
+							<dt class="section-works-detail__heading">
+								イラスト
+							</dt>
+							<dd class="section-works-detail__body">
+								<div class="section-works-detail__site-material section-works-detail__site-material--illust fadeUp js-animationTrigger">
+									<img src="asset/image/illust/digital/01_kinokokyoryu/MainVisual-PC.gif" alt="キノコ恐竜公式サイトのメインビジュアルに使用したイラスト">
+								</div>
+								<div class="section-works-detail__link-button-block">
+									<a href="illust_digital_kinokokyoryu.html" class="section-works-detail__link-button link-under-line-animation--dark-gray" aria-label="キノコ恐竜公式サイトに使用したイラスト詳細ページへとぶリンクボタン">
+										詳しくみる
+									</a>
+								</div>
+							</dd>
+						</div>
+						<div class="section-works-detail__column">
+							<dt class="section-works-detail__heading">制作期間</dt>
+							<dd class="section-works-detail__body">
+								企画/ワイヤーフレーム：10日<br>
+								ロゴ/イラスト/デザイン：1ヵ月<br>
+								コーディング：3週間
+							</dd>
+						</div>
+						<div class="section-works-detail__column">
+							<dt class="section-works-detail__heading">使用ツール</dt>
+							<dd class="section-works-detail__body">
+								<ul class="section-works-detail__check-list">
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											Illustrator
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											Photoshop
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											XD
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											Dreamweaver
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											Visual Studio Code
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											<span class="section-works-detail__text--uppercase">
+												Clip Studio Paint
+											</span>
+										</span>
+									</li>
+								</ul>
+							</dd>
+						</div>
+						<div class="section-works-detail__column">
+							<dt class="section-works-detail__heading">使用言語</dt>
+							<dd class="section-works-detail__body">
+								<ul class="section-works-detail__check-list">
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											HTML
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											CSS
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											jQuery
+										</span>
+									</li>
+									<li class="section-works-detail__check-item">
+										<span class="section-works-detail__check-text">
+											JavaScript
+										</span>
+									</li>
+								</ul>
+							</dd>
+						</div>
+						<div class="section-works-detail__column">
+							<dt class="section-works-detail__heading">制作記録</dt>
+							<dd class="section-works-detail__body">
+								<a href="https://note.com/todakans_memo/n/na238b488d6d4" target="_blank" class="section-works-detail__off-site-link">
+									<p class="section-works-detail__thumbnail-title under-line-animation--dark-gray">
+										note記事<br>
+										【自主制作】キノコ恐竜公式サイト制作記録
+									</p>
+									<div class="section-works-detail__thumbnail section-works-detail__image--filter fadeUp js-animationTrigger">
+										<img src="asset/image/works/web-site/01_kinokokyoryu/note No.001.png" alt="" class="scale-thumbnail-animation">
+									</div>
+								</a>
+							</dd>
+						</div>
+					</dl>
+					<div class="section-works-detail__design-comp works__design fadeUp js-animationTrigger">
+						<img src="asset/image/works/web-site/01_kinokokyoryu/top-pc.webp" alt="キノコ恐竜公式サイトトップページ（PC）" class="section-works-detail__image--filter">
+						<img src="asset/image/works/web-site/01_kinokokyoryu/top-sp.webp" alt="キノコ恐竜公式サイトトップページ（SP）" class="section-works-detail__image--filter">
+					</div>
+					<div class="section-works-detail__public-site-link-wrapper js-works__button">
+						<a href="https://kinokokyoryu.jp/" target="_blank" class="section-works-detail__public-site-link">
+							<span class="section-works-detail__link-text section-works-detail__text--uppercase under-line-animation--vivid-yellow">
+								Visit Website
+							</span>
+						</a>
+					</div>
+        </div>
+      </section>
+			<section class="works-tab">
+				<h2 class="section__title text-slide-animation js-animationTrigger">
+					<span class="section__title-inner text-slide-animation__inner js-animationTrigger">
+						<span class="section__title-en">Other<br>Works</span>
+						<span class="section__title-ja">制作物</span>
+					</span>
+				</h2>
+				<div class="tab">
+					<!-- タブを構成するブロック -->
+					<div class="tab-list">
+						<button type="button" class="tab-list-item js-tab-works-list-button is-btn-active" aria-controls="works-tab-contents" aria-expanded="true" aria-label="すべてのジャンルの制作物を表示する">すべて</button>
+						<button type="button" class="tab-list-item js-tab-works-list-button" aria-controls="works-tab-contents" aria-expanded="false" aria-label="Webサイトの制作物を表示する">Webサイト</button>
+						<button type="button" class="tab-list-item js-tab-works-list-button" aria-controls="works-tab-contents" aria-expanded="false" aria-label="バナー広告の制作物を表示する">バナー</button>
+						<button type="button" class="tab-list-item js-tab-works-list-button" aria-controls="works-tab-contents" aria-expanded="false" aria-label="その他の制作物を表示する">その他</button>
+					</div>
+
+					<!-- コンテンツを構成するブロック -->
+					<div class="tab-contents-wrap">
+						<div class="tab-contents is-contents-active">
+							<ol>
+								<li class="works-tab__list">
+									<a href="works_web_webschool.html">
+										<div class="image fadeUp js-animationTrigger">
+											<img class="image-web scale-thumbnail-animation" src="asset/image/works/web-site/02_webschool-promotion/web-school_promotion-site_mock-up-pc.png" alt="Webデザイナースクール広告サイト">
+										</div>
+										<div class="works__description">
+											<p>学校課題</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">
+													Webデザイナースクール広告サイト
+												</span>											
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>架空サイト</p>
+										</div>
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_web_kotaro-todaka_portfolio.html">
+										<div class="image fadeUp delay-time01 js-animationTrigger">
+											<img class="image-web scale-thumbnail-animation" src="asset/image/works/web-site/03_kotaro-todaka-portfolio/todaka-kotaro_portfolio-site_mock-up-pc.webp" alt="Todaka Kotaro Portfolio Site">
+										</div>
+										<div class="works__description">
+											<p>自主制作</p>
+											<h3 class="works__title">
+												<span class="works__title-jp"><span class="works__title-en">Todaka</span> Kotaro Portfolio Site</span>											
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>ポートフォリオサイト</p>
+										</div>
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_web_sugutabe.html">
+										<div class="image fadeUp delay-time02 js-animationTrigger">
+											<img class="image-web scale-thumbnail-animation" src="asset/image/works/web-site/04_sugutabe/sugutabe_mock-up-pc.webp" alt="スグ食べプロモーションサイト">
+										</div>
+										<div class="works__description">
+											<p>学校課題</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">スグ食べ</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>架空サイト</p>
+										</div>						
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_banner_lamp.html">
+										<div class="image fadeUp js-animationTrigger">
+											<img class="image-banner scale-thumbnail-animation" src="asset/image/works/banner/01_LAMP/lamp.webp" alt="ゲストハウスLAMPバナー">
+										</div>
+										<div class="works__description">
+											<p>学校課題</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">ゲストハウス<span class="works__title-en">Lamp</span></span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>バナー/架空広告</p>
+										</div>		
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_poster_kaerunokobo_comitia130.html">
+										<div class="image fadeUp delay-time01 js-animationTrigger">
+											<img class="image-poster scale-thumbnail-animation" src="asset/image/works/poster/01_comitia130/comitia130-circle-poster_mock-up.webp" alt="Comitia130サークルポスター">
+										</div>
+										<div class="works__description">
+											<p>蛙野工房</p>
+											<h3 class="works__title">
+												<span class="works__title-jp"><span class="works__title-en">Comitia130</span>サークルポスター</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>ポスター</p>
+										</div>		
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_logo_kinokokyoryu.html">
+										<div class="image fadeUp delay-time02 js-animationTrigger">
+											<img class="image-logo scale-thumbnail-animation" src="asset/image/works/logo/01_kinokokyoryu/site-logo-color.webp" alt="キノコ恐竜ロゴ">
+										</div>
+										<div class="works__description">
+											<p>蛙野工房</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">キノコ恐竜</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>ロゴ</p>
+										</div>		
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_logo_kaerunokobo.html">
+										<div class="image fadeUp js-animationTrigger">
+											<img class="image-logo scale-thumbnail-animation" src="asset/image/works/logo/02_kaerunokobo/circle-logo.webp" alt="蛙野工房ロゴ">
+										</div>
+										<div class="works__description">
+											<p>蛙野工房</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">蛙野工房</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>ロゴ</p>
+										</div>
+									</a>
+								</li>
+							</ol>
+						</div>
+						<div class="tab-contents">
+							<ol>
+								<li class="works-tab__list">
+									<a href="works_web_webschool.html">
+										<div class="image fadeUp js-animationTrigger">
+											<img class="image-web scale-thumbnail-animation" src="asset/image/works/web-site/02_webschool-promotion/web-school_promotion-site_mock-up-pc.png" alt="Webデザイナースクール広告サイト">
+										</div>
+										<div class="works__description">
+											<p>学校課題</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">
+													Webデザイナースクール広告サイト
+												</span>											
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>架空サイト</p>
+										</div>
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_web_kotaro-todaka_portfolio.html">
+										<div class="image fadeUp delay-time01 js-animationTrigger">
+											<img class="image-web scale-thumbnail-animation" src="asset/image/works/web-site/03_kotaro-todaka-portfolio/todaka-kotaro_portfolio-site_mock-up-pc.webp" alt="Todaka Kotaro Portfolio Site">
+										</div>
+										<div class="works__description">
+											<p>自主制作</p>
+											<h3 class="works__title">
+												<span class="works__title-jp"><span class="works__title-en">Todaka</span> Kotaro Portfolio Site</span>											
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>ポートフォリオサイト</p>
+										</div>
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_web_sugutabe.html">
+										<div class="image fadeUp delay-time02 js-animationTrigger">
+											<img class="image-web scale-thumbnail-animation" src="asset/image/works/web-site/04_sugutabe/sugutabe_mock-up-pc.webp" alt="スグ食べプロモーションサイト">
+										</div>
+										<div class="works__description">
+											<p>学校課題</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">スグ食べ</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>架空サイト</p>
+										</div>						
+									</a>
+								</li>
+							</ol>
+						</div>
+						<div class="tab-contents">
+							<ol>
+								<li class="works-tab__list">
+									<a href="works_banner_lamp.html">
+										<div class="image fadeUp js-animationTrigger">
+											<img class="image-banner scale-thumbnail-animation" src="asset/image/works/banner/01_LAMP/lamp.webp" alt="ゲストハウスLAMPバナー">
+										</div>
+										<div class="works__description">
+											<p>学校課題</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">ゲストハウス<span class="works__title-en">Lamp</span></span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>バナー/架空広告</p>
+										</div>		
+									</a>
+								</li>
+							</ol>
+						</div>
+						<div class="tab-contents">
+							<ol>
+								<li class="works-tab__list">
+									<a href="works_poster_kaerunokobo_comitia130.html">
+										<div class="image fadeUp js-animationTrigger">
+											<img class="image-poster scale-thumbnail-animation" src="asset/image/works/poster/01_comitia130/comitia130-circle-poster_mock-up.webp" alt="Comitia130サークルポスター">
+										</div>
+										<div class="works__description">
+											<p>蛙野工房</p>
+											<h3 class="works__title">
+												<span class="works__title-jp"><span class="works__title-en">Comitia130</span>サークルポスター</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>ポスター</p>
+										</div>		
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_logo_kinokokyoryu.html">
+										<div class="image fadeUp delay-time01 js-animationTrigger">
+											<img class="image-logo scale-thumbnail-animation" src="asset/image/works/logo/01_kinokokyoryu/site-logo-color.webp" alt="キノコ恐竜ロゴ">
+										</div>
+										<div class="works__description">
+											<p>蛙野工房</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">キノコ恐竜</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>ロゴ</p>
+										</div>		
+									</a>
+								</li>
+								<li class="works-tab__list">
+									<a href="works_logo_kaerunokobo.html">
+										<div class="image fadeUp delay-time02 js-animationTrigger">
+											<img class="image-logo scale-thumbnail-animation" src="asset/image/works/logo/02_kaerunokobo/circle-logo.webp" alt="蛙野工房ロゴ">
+										</div>
+										<div class="works__description">
+											<p>蛙野工房</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">蛙野工房</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>ロゴ</p>
+										</div>
+									</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="illust-tab">
+				<h2 class="section__title text-slide-animation js-animationTrigger">
+					<span class="section__title-inner text-slide-animation__inner js-animationTrigger">
+						<span class="section__title-en">Illust</span>
+						<span class="section__title-ja">イラスト</span>
+					</span>
+				</h2>
+				<div class="tab">
+					<!-- タブを構成するブロック -->
+					<div class="tab-list02">
+						<button type="button" class="tab-list02-item is-btn02-active" aria-controls="illust-tab-contents" aria-expanded="true" aria-label="すべてのジャンルのイラストを表示する">すべて</button>
+						<!-- <button type="button" class="tab-list02-item">デジタル</button>
+						<button type="button" class="tab-list02-item">アナログ</button> -->
+					</div>
+
+					<!-- コンテンツを構成するブロック -->
+					<div class="tab-contents02-wrap">
+						<div class="tab-contents02 is-contents02-active">
+							<ul>
+								<li class="illust-tab__list">
+									<a href="illust_digital_kinokokyoryu.html">
+										<div class="image fadeUp js-animationTrigger">
+											<img class="image-digital scale-thumbnail-animation" src="asset/image/illust/digital/01_kinokokyoryu/MainVisual-PC.gif" alt="キノコ恐竜イラスト">
+										</div>
+										<div class="works__description">
+											<p>蛙野工房</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">キノコ恐竜</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>デジタルイラスト</p>
+										</div>
+									</a>
+								</li>
+								<li class="illust-tab__list">
+									<a href="illust_digital_webschool.html">
+										<div class="image fadeUp delay-time01 js-animationTrigger">
+											<img class="image-digital scale-thumbnail-animation" src="asset/image/illust/digital/02_webschool-promotion/webschool-mainvisual.webp" alt="Webデザイナースクール広告サイトイラスト">
+										</div>
+										<div class="works__description">
+											<p>学校課題</p>
+											<h3 class="works__title">
+												<span class="works__title-jp">Webデザイナースクール広告サイト</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>デジタルイラスト</p>
+										</div>
+									</a>
+								</li>
+								<li class="illust-tab__list">
+									<a href="illust_digital_kotaro-todaka_portfolio.html">
+										<div class="image fadeUp delay-time02 js-animationTrigger">
+											<img class="image-digital scale-thumbnail-animation" src="asset/image/illust/digital/03_kotaro-todaka-portfolio/strength-illust-detail.webp" alt="TODAKA Kotaro Portfolio Siteイラスト">
+										</div>
+										<div class="works__description">
+											<p>自主制作</p>
+											<h3 class="works__title">
+												<span class="works__title-jp"><span class="works__title-en">Todaka</span>Kotaro Portfolio Site</span>
+												<span class="works__title-arrow"></span>
+											</h3>
+											<p>デジタルイラスト</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- <div class="tab-contents02">
+							<ul>
+								<li class="illust-tab__list"><a href="illust_digital_webschool.html">
+									<div class="image fadeUp js-animationTrigger">
+										<img class="image-digital" src="asset/image/illust/digital/02_webschool-promotion/webschool-mainvisual.webp" alt="Webデザイナースクール広告サイトイラスト">
+									</div>
+									<div class="works__description">
+										<p>学校課題</p>
+										<h3 class="works__title">
+											<span class="works__title-jp">Webデザイナースクール広告サイト</span>
+											<span class="works__title-arrow"></span>
+										</h3>
+										<p>デジタルイラスト</p>
+									</div>
+								</a></li>
+								<li class="illust-tab__list"><a href="illust_digital_kotaro-todaka_portfolio.html">
+									<div class="image fadeUp delay-time01 js-animationTrigger">
+										<img class="image-digital" src="asset/image/illust/digital/03_kotaro-todaka-portfolio/strength-illust-detail.webp" alt="TODAKA Kotaro Portfolio Siteイラスト">
+									</div>
+									<div class="works__description">
+										<p>自主制作</p>
+										<h3 class="works__title">
+											<span class="works__title-jp"><span class="works__title-en">Todaka</span>Kotaro Portfolio Site</span>
+											<span class="works__title-arrow"></span>
+										</h3>
+										<p>デジタルイラスト</p>
+									</div>
+								</a></li>
+							</ul>
+						</div>
+						<div class="tab-contents02">
+						</div> -->
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<a href="#" class="footer__scroll-top under-line-animation--white js-footer__button--scroll-top">
+				<div class="loop-text-wrapper">
+					<p class="footer__scroll-top-text loop-text__inner">Back To Top</p>
+					<p class="footer__scroll-top-text footer__scroll-top-text--yellow loop-text__inner">Back To Top</p>
+					<p class="footer__scroll-top-text loop-text__inner">Back To Top</p>
+					<p class="footer__scroll-top-text footer__scroll-top-text--yellow loop-text__inner">Back To Top</p>
+					<p class="footer__scroll-top-text loop-text__inner">Back To Top</p>
+				</div>
+			</a>
+			<p class="footer__copyright">
+				<small>All Rights Reserved 2022 @ TODAKA Kotaro</small>
+			</p>
+		</footer>
+		<script src="asset/js/jquery-3.6.0.min.js"></script> 
+		<script src="asset/js/common.js"></script>
+		<script src="asset/js/works.js"></script>
+	</body>
+</html>

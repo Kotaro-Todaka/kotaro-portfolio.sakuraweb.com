@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/* 定義 */
+:root {
+  /* カラー定義 */
+  --color--medium-gray: #999999;
+  --color--deep-orange: #8B4D00;
+  /* フィルター定義 */
+  --filter-shadow--sheer-black-sp: drop-shadow(0 0 10px rgba(0,0,0,0.2));
+  --filter-shadow--sheer-black-pc: drop-shadow(0 0 20px rgba(0,0,0,0.2));
+}
+
+/* illust-detail セクション */
+.section-illust-detail {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  padding-top: 90px;
+  text-align: left;
+}
+.section-illust-detail-container {
+  width: 90%;
+  max-width: 487px;
+  margin: 0 auto;
+}
+/* メインビジュアル */
+.section-illust-detail__main-visual {
+  margin-bottom: 50px;
+}
+/* サイトタイトル */
+.section-illust-detail__title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  margin-bottom: 20px;
+}
+.section-illust-detail__title {
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.section-illust-detail__title--uppercase {
+  text-transform: uppercase;
+}
+.section-illust-detail__title--line-height {
+  line-height: 1.5;
+}
+/* タイトル説明文 */
+.section-illust-detail__explanation {
+  color: var(--color--medium-gray);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5;
+}
+/* 公開日付・制作日付・サイズ */
+.section-illust-detail__main-visual-definition-list {
+  margin-bottom: 40px;
+}
+.section-illust-detail__time {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+}
+.section-illust-detail__time-heading,
+.section-illust-detail__time-body {
+  color: var(--color--medium-gray);
+  font-size: 0.875rem; /* 14px */
+}
+/* メインビジュアル イラスト */
+.section-illust-detail__main-visual-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.section-illust-detail__main-visual-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-illust-detail__main-visual-image--filter img {
+  filter: var(--filter-shadow--sheer-black-sp);
+}
+
+/* PC サイズからの変化 */
+@media (min-width:1025px) {
+  /* illust-detail セクション */
+  .section-illust-detail {
+    margin-bottom: 160px;
+    padding-top: 120px;
+  }
+  .section-illust-detail-container {
+    width: 75%;
+    max-width: 1180px;
+  }
+  /* メインビジュアル */
+  .section-illust-detail__main-visual {
+    margin-bottom: 60px;
+  }
+  /* サイトタイトル */
+  .section-illust-detail__title-container {
+    margin-bottom: 20px;
+  }
+  .section-illust-detail__title {
+    font-size: 2.375rem; /* 38px */
+  }
+  .section-illust-detail__title--line-height {
+  line-height: unset;
+  }
+  /* タイトル説明文 */
+  .section-illust-detail__explanation {
+    font-size: 1rem; /* 16px */
+  }
+  /* 公開日付・制作日付・サイズ */
+  .section-illust-detail__main-visual-definition-list {
+    margin-bottom: 60px;
+  }
+  /* メインビジュアル イラスト */
+  .section-illust-detail__main-visual-image {
+    width: 75%;
+    max-width: 800px;
+  }
+  .section-illust-detail__main-visual-image--filter img {
+    filter: var(--filter-shadow--sheer-black-pc);
+  }
+}
+
+
+/* ここから各イラストの説明パート */
+/* 基本レイアウト */
+.section-illust-detail__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px 0;
+  margin-bottom: 80px;
+}
+.section-illust-detail__column:last-child {
+  margin-bottom: unset;
+}
+.section-illust-detail__column--small-margin-bottom {
+  margin-bottom: 60px;
+}
+.section-illust-detail__column--others {
+  margin-bottom: 30px;
+}
+/* 各イラスト詳細のレイアウト */
+.section-illust-detail__column--grid {
+  gap: 30px 0;
+}
+/* 定義リストの見出し */
+.section-illust-detail__heading {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 700;
+}
+.section-illust-detail__heading-ja {
+  color: var(--color--medium-gray);
+  font-size: 0.875rem; /* 14px */
+  font-weight: 400;
+}
+.section-illust-detail__heading-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+}
+/* リスト内の文章 */
+.section-illust-detail__body {
+  font-size: 1rem; /* 16px */
+  line-height: 2;
+}
+/* チェックボックスがついた項目 */
+.section-illust-detail__check-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+}
+.section-illust-detail__check-text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../image/common/button.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(2px);
+}
+.section-illust-detail__check-text--uppercase {
+  text-transform: uppercase;
+}
+/* それぞれの詳細部分についているイラスト */
+/*
+ * ・background：背景色をつけたもの
+ * ・few：イラストが二つ
+ * ・many：イラストがたくさんあるときのスタイリング
+*/
+.section-illust-detail__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-illust-detail__image img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+}
+.section-illust-detail__image--background {
+  background-color: var(--color--deep-orange);
+}
+.section-illust-detail__image--border-radius,
+.section-illust-detail__image--border-radius img {
+  border-radius: 4px;
+}
+.section-illust-detail__image--many {
+  flex-wrap: wrap;
+  max-width: 430px;
+  margin: 0 auto;
+  gap: 20px 5%;
+}
+.section-illust-detail__image-inner--many {
+  width: 30%;
+  max-width: 100px;
+}
+
+.section-illust-detail__image--few {
+  gap: 0 60px;
+}
+.section-illust-detail__image-inner--few {
+  width: 100px;
+}
+
+/* その他のイラストのスタイリング */
+.other-illust {
+  margin-top: 60px;
+}
+.other-illust__list,
+.other-icon__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.other-illust__list {
+  flex-wrap: wrap;
+  gap: 30px 25px;
+  margin-bottom: 60px;
+}
+.other-illust__item {
+  width: 45%;
+  max-width: 300px;
+}
+.other-illust__item:last-child {
+  width: 100%;
+  max-width: 600px;
+}
+.other-illust__item img,
+.other-icon__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.other-icon__list {
+  gap: 0 8%;
+}
+.other-icon__item {
+  height: 50px;
+}
+
+/* PC サイズからの変化 */
+@media (min-width:1025px) {
+  /* ここから各イラストの説明パート */
+  /* 基本レイアウト */
+  .section-illust-detail__definition-list {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .section-illust-detail__column {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+  }
+  .section-illust-detail__column--small-margin-bottom {
+    margin-bottom: 80px;
+  }
+  .section-illust-detail__column--others {
+  margin-bottom: 60px;
+  }
+  /* 各イラスト詳細のレイアウト */
+  .section-illust-detail__column--grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto 59%;
+    gap: 0px 10%;
+  }
+  /* 定義リストの見出し */
+  .section-illust-detail__heading {
+    grid-column: 2/3;
+    line-height: 2;
+  }
+  .section-illust-detail__heading-inner {
+    gap: unset;
+    margin-bottom: 20px;
+  }
+  /* リスト内の文章 */
+  .section-illust-detail__body {
+    flex-basis: 78%;
+    font-size: 1.125rem; /* 18px */
+  }
+  /* チェックボックスがついた項目 */
+  .section-illust-detail__check-list {
+    align-items: center;
+    gap: 0 90px;
+  }
+  /* それぞれの詳細部分についているイラスト */
+  /*
+  * ・background：背景色をつけたもの
+  * ・few：イラストが二つ
+  * ・many：イラストがたくさんあるときのスタイリング
+  */
+  .section-illust-detail__image {
+    grid-row: 1/3;
+  }
+  .section-illust-detail__image img {
+    max-width: 320px;
+  }
+  .section-illust-detail__image--border-radius,
+  .section-illust-detail__image--border-radius img {
+    border-radius: 8px;
+  }
+  .section-illust-detail__image--many {
+    max-width: 320px;
+    gap: 16px 8px;
+  }
+  .section-illust-detail__image--few {
+    gap: 0 40px;
+  }
+  .section-illust-detail__image-inner--few {
+    width: 120px;
+  }
+
+    /* その他のイラストのスタイリング */
+  .other-illust {
+    max-width: 1020px;
+    margin: 80px auto 0;
+  }
+  .other-illust__list {
+    gap: 60px;
+    margin-bottom: 80px;
+  }
+  .other-illust__item {
+    width: 25%;
+    max-width: 260px;
+  }
+  .other-illust__item:last-child {
+    width: 60%;
+    max-width: 600px;
+  }
+  .other-icon__item {
+    height: 60px;
+  }
+}
