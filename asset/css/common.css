@@ -347,9 +347,6 @@ body {
   font-size: 2.25rem; /* 36px */
   text-transform: uppercase;
 }
-.footer__scroll-top-text--yellow {
-  color: var(--color--vivid-yellow);
-}
 /* コピーライト */
 .footer__copyright {
   padding-bottom: 12px;
