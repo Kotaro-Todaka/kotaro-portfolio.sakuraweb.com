@@ -1,51 +1,50 @@
 // スクロールトップボタン
 // 定義づけ
-const SCROLL_TOP_BUTTON = document.querySelector(".js-footer__button--scroll-top");
+const scrollTopButton = document.querySelector(".js-footer__button--scroll-top");
 
 // スクロールトップボタンが押されたら、スクロールする
-SCROLL_TOP_BUTTON.addEventListener('click',(event) => {
+scrollTopButton.addEventListener('click',(event) => {
   event.preventDefault();
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
-  })
-})
+  });
+});
 
 // ハンバーガーメニュー
 // 定義づけ
-const BODY_ELEMENT = document.getElementsByTagName("body")[0];
-const HAMBURGER_BUTTON = document.querySelector("#js-hamburger");
-const NAVIGATION_MENU = document.querySelector("#js-nav");
-const NAVIGATION_MENU_LINKS = document.querySelectorAll("#js-nav a");
-const ACTIVE_CLASS = "is-active";
+const bodyElement = document.getElementsByTagName("body")[0];
+const hamburgerButton = document.querySelector("#js-hamburger");
+const navigationMenuLinks = document.querySelectorAll("#js-nav a");
+const activeClass = "is-active";
 let hamburgerButtonState;
 
 
 // ハンバーガーボタンが押されたら、メニューが開閉する
-HAMBURGER_BUTTON.addEventListener('click',() => {
+hamburgerButton.addEventListener('click',() => {
   // ハンバーガーボタンとナビゲーションメニューのクラス切り替え
-  BODY_ELEMENT.classList.toggle(ACTIVE_CLASS);
-  hamburgerButtonState = HAMBURGER_BUTTON.getAttribute('aria-expanded');
+  bodyElement.classList.toggle(activeClass);
+  hamburgerButtonState = hamburgerButton.getAttribute('aria-expanded');
   // ハンバーガーボタンの開閉状態切り替え
   if(hamburgerButtonState === 'false'){
-    HAMBURGER_BUTTON.setAttribute('aria-expanded','true');
+    hamburgerButton.setAttribute('aria-expanded','true');
   } else {
-    HAMBURGER_BUTTON.setAttribute('aria-expanded','false');
-  }
+    hamburgerButton.setAttribute('aria-expanded','false');
+  };
 });
 // ナビゲーションリンクが押されたら、メニューが閉じる
-NAVIGATION_MENU_LINKS.forEach((link) => {
+navigationMenuLinks.forEach((link) => {
   link.addEventListener('click',() => {
-    BODY_ELEMENT.classList.remove(ACTIVE_CLASS);
-    HAMBURGER_BUTTON.setAttribute('aria-expanded','false');
+    bodyElement.classList.remove(activeClass);
+    hamburgerButton.setAttribute('aria-expanded','false');
   });
 });
 
 window.addEventListener('keydown',(event) => {
   if(event.key === 'Escape'){
-    BODY_ELEMENT.classList.remove(ACTIVE_CLASS);
-    HAMBURGER_BUTTON.setAttribute('aria-expanded','false');
-  }
+    bodyElement.classList.remove(activeClass);
+    hamburgerButton.setAttribute('aria-expanded','false');
+  };
 });
 
 // is-btn-activeをis-button-activeに変える
@@ -93,26 +92,25 @@ $(function(){
 
 // スクロールアニメーション
 // ビューポートと交差したら、アニメーションのきっかけとなる要素
-const ANIMATION_TRIGGERS = document.querySelectorAll(".js-animationTrigger");
+const animationTriggers = document.querySelectorAll(".js-animationTrigger");
 // 追加されるクラス
-const SHOW_CLASS = 'is-show';
+const showClass = 'is-show';
 
-// ANIMATION_OBSERVERオプション
-const OPTIONS_01 = {
+// animationObserverオプション
+const option01 = {
   rootMargin: '-50% 0%'
-  // threshold: 0.5
 };
 
-const ANIMATION_OBSERVER = new IntersectionObserver((entries) => {
+const animationObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      ANIMATION_OBSERVER.unobserve(entry.target);
-      entry.target.classList.add(SHOW_CLASS);
+      animationObserver.unobserve(entry.target);
+      entry.target.classList.add(showClass);
     }
   });
 });
 
 // 監視対象01：.js-animationTriggerが入ったすべての要素
-ANIMATION_TRIGGERS.forEach(trigger => {
-  ANIMATION_OBSERVER.observe(trigger, OPTIONS_01);
+animationTriggers.forEach(trigger => {
+  animationObserver.observe(trigger, option01);
 });
