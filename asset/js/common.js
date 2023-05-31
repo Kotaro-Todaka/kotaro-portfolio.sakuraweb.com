@@ -32,18 +32,23 @@ hamburgerButton.addEventListener('click',() => {
     hamburgerButton.setAttribute('aria-expanded','false');
   };
 });
+
+// メニューを閉じる命令
+const closeMenu = () => {
+  bodyElement.classList.remove(activeClass);
+  hamburgerButton.setAttribute('aria-expanded','false');
+}
+
 // ナビゲーションリンクが押されたら、メニューが閉じる
 navigationMenuLinks.forEach((link) => {
   link.addEventListener('click',() => {
-    bodyElement.classList.remove(activeClass);
-    hamburgerButton.setAttribute('aria-expanded','false');
+    closeMenu();
   });
 });
 
 window.addEventListener('keydown',(event) => {
   if(event.key === 'Escape'){
-    bodyElement.classList.remove(activeClass);
-    hamburgerButton.setAttribute('aria-expanded','false');
+    closeMenu();
   };
 });
 
