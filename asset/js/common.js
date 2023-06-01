@@ -52,28 +52,6 @@ window.addEventListener('keydown',(event) => {
   };
 });
 
-// is-btn-activeをis-button-activeに変える
-// Works Tab Menu 定義リスト
-// const TAB_WORKS_BUTTON_LIST = document.querySelectorAll(".js-works-tab-button-list");
-// const TAB_WORKS_BUTTON_ACTIVE = document.querySelector(".is-works-tab-button-active");
-// const TAB_WORKS_CONTENTS = document.querySelectorAll(".js-works-tab-contents");
-// const TAB_WORKS_CONTENTS_ACTIVE = document.querySelector(".is-works-tab-contents-active");
-// // Illust Tab Menu 定義リスト
-// const TAB_ILLUST_BUTTON_LIST = document.querySelectorAll(".js-illust-tab-button-list");
-// const TAB_ILLUST_BUTTON_ACTIVE = document.querySelector(".is-illust-tab-button-active");
-// const TAB_ILLUST_CONTENTS = document.querySelectorAll(".js-illust-tab-contents");
-// const TAB_ILLUST_CONTENTS_ACTIVE = document.querySelector(".is-illust-tab-contents-active");
-
-// TAB_WORKS_BUTTON_LIST.addEventListener('click',(tag) => {
-//   // 要素を取得し、配列に格納する。
-//   // n番目の要素を取得するには、HTML Collectionとして取得した要素の塊から、
-//   // Elementsオブジェクトに対して、目印を置くだけでOK！
-//   const TARGETS_ELEMENT = TAB_WORKS_BUTTON_LIST.parentNode.children;
-//   Array.from(TARGETS_ELEMENT).indexOf(TAB_WORKS_BUTTON_LIST);
-//   const SELECTED_ELEMENT = document.querySelectorAll("div#button > button");
-//   SELECTED_ELEMENT[INDEX];
-  
-// });
 
 // Works,Illustについているタブメニュー
 $(function(){
