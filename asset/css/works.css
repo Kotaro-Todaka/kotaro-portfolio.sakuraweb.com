@@ -325,7 +325,7 @@
 .section-works-detail__design-comp {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 80px;
   margin-top: 80px;
 }
@@ -471,6 +471,7 @@
   .section-works-detail__design-comp {
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
   }
   .section-works-detail__design-comp img {
     object-fit: contain;
